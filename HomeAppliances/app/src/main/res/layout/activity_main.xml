@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Home Appliances"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Author: 00000000000"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/washing_machine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Washing machine"
+                android:textSize="27sp"/>
+
+            <EditText
+                android:id="@+id/washNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#87CEEB"
+                android:textColor="#000080"
+                android:textColorHint="#000080"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Enter wash number 1..12" />
+
+            <Button
+                android:backgroundTint="#4169E1"
+                android:id="@+id/btnWash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Submit" />
+
+            <TextView
+                android:id="@+id/washNumberTxtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wash number: not provided" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/vacuum_cleaner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacuum cleaner"
+                android:textSize="27sp"/>
+
+            <Button
+                android:backgroundTint="#4169E1"
+                android:id="@+id/btnVacuum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Turn on" />
+
+            <TextView
+                android:id="@+id/vacuumOnOffTxtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacuum cleaner off" />
+
+            <TextView
+                android:id="@+id/vacuumStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: charged" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

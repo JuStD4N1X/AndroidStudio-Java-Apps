@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CatGallery</string>
+    <string name="EditTextHint">1-4</string>
+</resources>
